@@ -12,6 +12,31 @@
     </p>
 <% end %>
 
+<p>
+   <% if current_user %>
+  <li><a href=".">アビスパ福岡</a></li>
+  <li><a href=".">浦和レッズ</a></li>
+  <li><a href=".">ヴィッセル神戸</a></li>
+  <li><a href=".">FC東京</a></li>
+  <li><a href=".">大分トリニータ</a></li>
+  <li><a href=".">鹿島アントラーズ</a></li>
+  <li><a href=".">柏レイソル</a></li>
+  <li><a href=".">川崎フロンターレ</a></li>
+  <li><a href=".">ガンバ大阪</a></li>
+  <li><a href=".">サガン鳥栖</a></li>
+  <li><a href=".">サンフレッチェ広島</a></li>
+  <li><a href=".">清水エスパルス</a></li>
+  <li><a href=".">湘南ベルマーレ</a></li>
+  <li><a href=".">セレッソ大阪</a></li>
+  <li><a href=".">徳島ヴォルティス</a></li>
+  <li><a href=".">名古屋グランパス</a></li>
+  <li><a href=".">北海道コンサドーレ札幌</a></li>
+  <li><a href=".">ベガルタ仙台</a></li>
+  <li><a href=".">横浜FC</a></li>
+  <li><a href=".">横浜F・マリノス</a></li>
+  <% end %>
+</p>
+
 <p> 
 <% if current_user %>
   <%= link_to 'ツイートする', new_tweet_path %>
