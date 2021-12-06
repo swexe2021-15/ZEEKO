@@ -4,36 +4,38 @@
     <% if current_user %>
       <%= link_to '削除', tweet_path(e), method: :delete %>
       <% if e.likes.count > 0 %>
-        <%= link_to 'いいね削除', like_path(e), method: :delete %>
+        <%= link_to '★', like_path(e), method: :delete %>
       <% else %>
-        <%= link_to 'いいね', likes_path(tweet_id: e.id), method: :post %>
+        <%= link_to '☆', likes_path(tweet_id: e.id), method: :post %>
       <% end %>
     <% end %>
     </p>
 <% end %>
 
+
+
 <p>
    <% if current_user %>
-  <li><a href=".">アビスパ福岡</a></li>
-  <li><a href=".">浦和レッズ</a></li>
-  <li><a href=".">ヴィッセル神戸</a></li>
-  <li><a href=".">FC東京</a></li>
-  <li><a href=".">大分トリニータ</a></li>
-  <li><a href=".">鹿島アントラーズ</a></li>
-  <li><a href=".">柏レイソル</a></li>
-  <li><a href=".">川崎フロンターレ</a></li>
-  <li><a href=".">ガンバ大阪</a></li>
-  <li><a href=".">サガン鳥栖</a></li>
-  <li><a href=".">サンフレッチェ広島</a></li>
-  <li><a href=".">清水エスパルス</a></li>
-  <li><a href=".">湘南ベルマーレ</a></li>
-  <li><a href=".">セレッソ大阪</a></li>
-  <li><a href=".">徳島ヴォルティス</a></li>
-  <li><a href=".">名古屋グランパス</a></li>
-  <li><a href=".">北海道コンサドーレ札幌</a></li>
-  <li><a href=".">ベガルタ仙台</a></li>
-  <li><a href=".">横浜FC</a></li>
-  <li><a href=".">横浜F・マリノス</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420257.html">アビスパ福岡</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420192.html">浦和レッズ</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420248.html">ヴィッセル神戸</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420198.html">FC東京</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420222.html">大分トリニータ</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420190.html">鹿島アントラーズ</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420196.html">柏レイソル</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420200.html">川崎フロンターレ</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420246.html">ガンバ大阪</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420220.html">サガン鳥栖</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420218.html">サンフレッチェ広島</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420210.html">清水エスパルス</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420204.html">湘南ベルマーレ</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420216.html">セレッソ大阪</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420253.html">徳島ヴォルティス</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420214.html">名古屋グランパス</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420224.html">北海道コンサドーレ札幌</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420188.html">ベガルタ仙台</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420237.html">横浜FC</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420202.html">横浜F・マリノス</a></li>
   <% end %>
 </p>
 
