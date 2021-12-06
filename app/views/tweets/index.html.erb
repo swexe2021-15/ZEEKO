@@ -1,37 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>チャットルーム</title>
-    <link type="text/css" rel="stylesheet" href="bmesse.css" />
-  </head>
-  <body>
-    
-    <!-- 自分やユーザーの情報 -->
-    <div id="your_container">
-        <!-- チャットの外側部分① -->
-        <div id="bms_messages_container">
-            <!-- ヘッダー部分② -->
-            <div id="bms_chat_header">
-                <!--ステータス-->
-                <div id="bms_chat_user_status">
-                    <!--名-->
-                    <div id="bms_chat_user_name">チャットルーム</div>
-                </div>
-            </div>
-            <!-- テキストボックス、送信ボタン④ -->
-            <div id="bms_send">
-                <textarea id="bms_send_message"></textarea>
-                <div id="bms_send_btn"><%= link_to'チャットを送信する', new_tweet_path %></div>
-            </div>
-        </div>
-    </div>
-  </body>
-</html>
-
-
-
 
 <% @tweets.each do |e| %>
   <p>
@@ -90,4 +56,35 @@
 
 <p>
   <%= link_to 'ユーザー登録', users_path %>
+</p>
+
+<p>
+  <% if current_user %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チャットルーム</title>
+    <link type="text/css" rel="stylesheet" href="bmesse.css" />
+  
+  <body>
+    <!-- 自分やユーザーの情報 -->
+    <div id="your_container">
+        <!-- チャットの外側部分① -->
+        <div id="bms_messages_container">
+            <!-- ヘッダー部分② -->
+            <div id="bms_chat_header">
+                <!--ステータス-->
+                <div id="bms_chat_user_status">
+                    <!--名-->
+                    <div id="bms_chat_user_name">チャットルーム</div>
+                </div>
+            </div>
+            <!-- テキストボックス、送信ボタン④ -->
+            <div id="bms_send">
+                <textarea id="bms_send_message"></textarea>
+                <div id="bms_send_btn"><%= link_to'チャットを送信する', new_tweet_path %></div>
+            </div>
+        </div>
+    </div>
+  </body>
+  <% end %>
 </p>
