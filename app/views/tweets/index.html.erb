@@ -1,3 +1,4 @@
+<font size="6">
 <p>
   <% if current_user %>
     <meta charset="UTF-8">
@@ -18,6 +19,7 @@
                     <div id="bms_chat_user_name">チャットルーム</div>
                 </div>
             </div>
+            </font>
             <!-- テキストボックス、送信ボタン④ -->
             <div id="bms_send">
                 <textarea id="bms_send_message"></textarea>
@@ -30,8 +32,10 @@
 </p>
 
 <% @tweets.each do |e| %>
+<font size="7"><font color="#FF9933">
   <p>
     <%= e.message %>
+    </font></font>
     <% if current_user %>
       <%= link_to '削除', tweet_path(e), method: :delete %>
       <% if e.likes.count > 0 %>
@@ -43,8 +47,7 @@
     </p>
 <% end %>
 
-
-
+<font size="6">
 <p>
    <% if current_user %>
   <li><a href="https://www.soccer-king.jp/team/article/420257.html">アビスパ福岡</a></li>
@@ -66,7 +69,7 @@
   <li><a href="https://www.soccer-king.jp/team/article/420224.html">北海道コンサドーレ札幌</a></li>
   <li><a href="https://www.soccer-king.jp/team/article/420188.html">ベガルタ仙台</a></li>
   <li><a href="https://www.soccer-king.jp/team/article/420237.html">横浜FC</a></li>
-  <li><a href="https://www.soccer-king.jp/team/article/420202.html">横浜F・マリノス</a></li>
+  <li><a href="https://www.soccer-king.jp/team/article/420202.html">横浜F・マリノス</a></li></font>
   <% end %>
 </p>
 
